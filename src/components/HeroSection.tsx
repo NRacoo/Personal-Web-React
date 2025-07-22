@@ -1,6 +1,7 @@
 
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import { GithubIcon } from 'lucide-react';
 
 
 
@@ -14,12 +15,12 @@ const HeroSection = () => {
                             <span className='text-transparent bg-clip-text bg-gradient-to-r from-stone-400 to-white'> Hello I&apos;m, </span> <br />
                         <TypeAnimation
                             sequence={[
-                                // Same substring at the start will only be typed out once, initially
+                               
                                 'Aria',
-                                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                1000,
                                 'UI/UX Designer',
                                 1000,
-                                'Front-end Dev',
+                                'FullStack Dev',
                                 1000,
                                 'IoT Enthusiast',
                                 1000
@@ -45,10 +46,10 @@ const HeroSection = () => {
                                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle>
                                     </svg>
                                 </motion.a>
-                                <motion.a initial={{opacity:0, x:-100}} animate= {{opacity:1, x:0}} transition={{duration:0.5 , delay: 0.5}} href="https://x.com/NRacoooo">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
-                                    </path></svg>
+                                <motion.a initial={{opacity:0, x:-100}} animate= {{opacity:1, x:0}} transition={{duration:0.5 , delay: 0.5}} href ="https://github.com/NRacoo">
+                                    <GithubIcon width={40} height={40} className='text-white'/>
                                 </motion.a>
+                            
                         </div>
 
                             <div className='flex flex-col sm:flex-row gap-2'>
@@ -57,12 +58,10 @@ const HeroSection = () => {
                                     <motion.button initial={{opacity:0, x:-100}} animate= {{opacity:1, x:0}} transition={{duration:0.5 , delay: 0.5}}  className='rounded-full w-full sm:w-fit px-6 py-2 bg-white text-blue-800 font-semibold hover:bg-slate-200'> Collabs </motion.button>
                                 </a>
                                 
-                                <a href="./Aria-Cv.pdf">
+                                <a href="./NEW CV Aria.pdf">
                                     <motion.button initial={{opacity:0, x:-100}} animate= {{opacity:1, x:0}} transition={{duration:0.5 , delay: 0.5}} className='rounded-full w-full sm:w-fit px-6 py-2 border border-white text-white '>Downloads My CV</motion.button>
                                 </a>
                             </div>
-                            
-
                         </div>
 
                         
